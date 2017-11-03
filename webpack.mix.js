@@ -15,7 +15,7 @@ const LiveReloadPlugin = require('webpack-livereload-plugin');
 mix.js('app/app.js', 'public/')
    .sass('app/assets/sass/app.scss', 'public/')
    .copy('app/index.html', 'public/')
-   .copyDirectory('app/assets/images/', 'public/')
+   .copyDirectory('app/assets/images/', 'public/images/')
    .setPublicPath('public')
    .webpackConfig({
         plugins: [

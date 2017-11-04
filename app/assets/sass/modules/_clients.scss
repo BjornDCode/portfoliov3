@@ -1,5 +1,82 @@
 
 .clients {
     height: 100vh;
-    background-color: pink;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .swiper-slide {
+        width: 50vw;
+        margin: 0 10vw;
+    }
+
+    .client {
+        display: flex;
+        width: 50vw;
+        height: 50vw;
+        box-sizing: border-box;
+        border: 5px solid $black;
+        justify-content: center;
+        align-items: center;
+
+        &.uniavisen {
+            img {
+                width: 30%;
+            }
+        }
+        
+        &.knabstrup {
+            img {
+                width: 70%;
+            }
+        }
+
+        &.eraova {
+            img {
+                width: 70%;
+            }
+        }
+
+    }
+
+
+    @include respond-to(tablet) {
+        flex-direction: column;
+
+        h2 {
+            position: static;
+            // margin-bottom: 100px;
+            transform: translateY(-150px);
+        }
+
+        .swiper-container {
+            width: 100vw;
+        }
+
+        .swiper-wrapper {
+            transform: translate3d(0px, 0px, 0px) !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .swiper-slide {
+            margin: 0 20px;
+            width: auto;
+        }
+
+        .client {
+            width: 15vw;
+            height: 15vw;
+            border-width: 3px;
+        }
+
+    }
+
 }

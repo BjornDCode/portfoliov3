@@ -1,9 +1,83 @@
 <template>
     <section class="clients" id="clients">
+
         <h2>Clients</h2>
+
+        <swiper :options="swiperOptions" :not-next-tick="notNextTick" ref="clientSwiper">
+            <swiper-slide>
+                <a href="#" class="client uniavisen">
+                    <img src="images/uniavisen.svg" alt="Logo for Uniavisen">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#" class="client knabstrup">
+                    <img src="images/knabstrup.svg" alt="Logo for Knabstrup Keramik">
+                </a>
+            </swiper-slide>            
+            <swiper-slide>
+                <a href="#" class="client eraova">
+                    <img src="images/eraova.png" alt="Logo for Eraova">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#contact" class="client eraova">
+                    You?
+                </a>
+            </swiper-slide>
+        </swiper>
+
     </section>
 </template>
 
 <script>
-    export default {}
+    import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
+    export default {
+        data() {
+            return {
+                notNextTick: true,
+                swiperOptions: {
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+                    autoplay: false,
+                    loop: false
+                }
+            }
+        },
+        components: {
+            swiper,
+            swiperSlide
+        },
+        computed: {
+            swiper() {
+                return this.$refs.clientSwiper.swiper;
+            }
+        },
+        methods: {
+            setup() {
+                this.resize();
+
+                window.addEventListener('resize', this.resize);
+            },
+            resize() {
+                var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+                if (windowWidth < 768) {
+                    this.init();
+                    return;
+                }
+
+                this.destroy();
+            },
+            destroy() {
+                this.swiper.destroy(false);
+            },
+            init() {
+                this.swiper.init();
+            }
+        },
+        mounted() {
+            this.setup();
+        }
+    }
 </script>

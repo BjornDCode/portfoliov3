@@ -8,7 +8,12 @@
 
             <h4>Web Designer / Web Developer</h4>
 
-            <a href="#" class="square-link">
+            <a href="#" class="square-link" v-scroll-to="{
+                el: '#clients',
+                container: 'body',
+                duration: 800,
+                easing: 'ease-out'
+            }">
                 <img src="images/arrow.svg" alt="Arrow down">
             </a>
         </div>

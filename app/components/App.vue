@@ -1,6 +1,6 @@
 <template>
     <main class="app-container">
-        <div class="sections-container">
+        <div class="sections-container" id="sections">
             <intro />
             <clients />
         </div>

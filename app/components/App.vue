@@ -4,6 +4,7 @@
             <intro />
             <clients />
             <about />
+            <contact />
         </div>
         <!-- Contact component goes here -->
     </main>
@@ -13,12 +14,14 @@
     import Intro from './sections/Intro';
     import Clients from './sections/Clients';
     import About from './sections/About';
+    import Contact from './sections/Contact';
 
     export default {
         components: {
             Intro,
             Clients,
-            About
+            About,
+            Contact
         }
     }
 </script>

@@ -2,7 +2,7 @@
     font-family: 'Lato';
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato';
     color: $black;
 }
@@ -63,8 +63,35 @@ h4 {
 
 a {
     text-decoration: none;
+    color: $black;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 3px;
+        background-color: $black;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 150ms ease-out;
+    }
+
+    &:hover {
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+
 }
 
 img {
     max-width: 100%;
+}
+
+.sections-container {
+    margin-bottom: 100vh;
+    background-color: white;
 }

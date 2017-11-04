@@ -1,0 +1,42 @@
+
+.contact {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .email {
+        font-size: 20px;
+    }
+
+    .links {
+        position: absolute;
+        bottom: 10vh;
+        display: flex;
+
+        a {
+            margin: 0 5px;
+        }
+
+    }
+
+    @include respond-to(tablet) {
+        .email {
+            font-size: 28px;
+        }
+    }
+
+    @include respond-to(desktop) {
+        .email {
+            font-size: 35px;
+        }
+    }
+
+}

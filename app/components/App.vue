@@ -4,9 +4,8 @@
             <intro />
             <clients />
             <about />
-            <contact />
         </div>
-        <!-- Contact component goes here -->
+        <contact />
     </main>
 </template>
 

@@ -7,6 +7,12 @@
     justify-content: center;
     align-items: center;
 
+    &:hover {
+        &:after {
+            transform: scaleX(0);
+        }
+    }
+
     img {
         width: 40%;
     }

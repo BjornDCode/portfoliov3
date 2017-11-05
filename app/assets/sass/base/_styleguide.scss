@@ -87,6 +87,11 @@ a {
 
 }
 
+::selection {
+    color: $white;
+    background-color: $black;
+}
+
 img {
     max-width: 100%;
 }

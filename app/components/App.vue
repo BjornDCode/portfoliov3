@@ -1,25 +1,15 @@
 <template>
     <main class="app-container">
-        <div class="sections-container" id="sections">
-            <intro />
-            <clients />
-            <about />
-        </div>
+        <router-view></router-view>
         <contact />
     </main>
 </template>
 
 <script>
-    import Intro from './sections/Intro';
-    import Clients from './sections/Clients';
-    import About from './sections/About';
-    import Contact from './sections/Contact';
+    import Contact from './sections/general/Contact';
 
     export default {
         components: {
-            Intro,
-            Clients,
-            About,
             Contact
         }
     }

@@ -5,19 +5,19 @@
 
         <swiper :options="swiperOptions" :not-next-tick="notNextTick" ref="clientSwiper">
             <swiper-slide>
-                <a href="#" class="client uniavisen">
+                <router-link to="/client/uniavisen" class="client uniavisen">
                     <img src="images/uniavisen.svg" alt="Logo for Uniavisen">
-                </a>
+                </router-link>
             </swiper-slide>
             <swiper-slide>
-                <a href="#" class="client knabstrup">
+                <router-link to="/client/knabstrup" class="client knabstrup">
                     <img src="images/knabstrup.svg" alt="Logo for Knabstrup Keramik">
-                </a>
+                </router-link>
             </swiper-slide>            
             <swiper-slide>
-                <a href="#" class="client eraova">
+                <router-link to="/client/eraova" class="client eraova">
                     <img src="images/eraova.png" alt="Logo for Eraova">
-                </a>
+                </router-link>
             </swiper-slide>
             <swiper-slide>
                 <a href="#contact" class="client eraova">

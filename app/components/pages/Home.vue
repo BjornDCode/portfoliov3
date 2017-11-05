@@ -1,9 +1,9 @@
 <template>
-    <div class="sections-container" id="sections">
+    <main class="home-page sections-container" id="sections">
         <intro />
         <clients />
         <about />
-    </div>
+    </main>
 </template>
 
 <script>

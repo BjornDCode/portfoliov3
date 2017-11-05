@@ -10,10 +10,11 @@
 @import "base/styleguide";
 
 // Modules
-@import "modules/intro";
-@import "modules/clients";
-@import "modules/about";
-@import "modules/contact";
+@import "modules/general/contact";
+
+@import "modules/home/intro";
+@import "modules/home/clients";
+@import "modules/home/about";
 
 // Components
 @import "components/square-link";

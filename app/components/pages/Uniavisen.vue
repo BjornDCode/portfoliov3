@@ -1,9 +1,15 @@
 <template>
-    <section>
-        <h1>Uniavisen</h1>
-    </section>
+    <main class="client-page sections-container">
+        <intro />
+    </main>
 </template>
 
 <script>
-    export default {}
+    import Intro from '../sections/clients/Intro';
+
+    export default {
+        components: {
+            Intro
+        }
+    }
 </script>

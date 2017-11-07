@@ -1,6 +1,6 @@
 <template>
     <main class="client-page sections-container">
-        <intro />
+        <intro name="uniavisen" url="https://uniavisen.dk/" />
     </main>
 </template>
 

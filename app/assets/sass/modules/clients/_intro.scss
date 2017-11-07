@@ -1,0 +1,38 @@
+.client-page .intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .client {
+        display: flex;
+        width: 50vw;
+        height: 50vw;
+        box-sizing: border-box;
+        border: 5px solid $black;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &.uniavisen {
+            img {
+                width: 30%;
+            }
+        }
+        
+        &.knabstrup {
+            img {
+                width: 70%;
+            }
+        }
+
+        &.eraova {
+            img {
+                width: 70%;
+            }
+        }
+
+    }
+
+}

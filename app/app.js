@@ -10,7 +10,7 @@ Vue.use(VueScrollTo);
 
 const router = new VueRouter({
     routes,
-    mode: 'history',
+    // mode: 'history',
     scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition;

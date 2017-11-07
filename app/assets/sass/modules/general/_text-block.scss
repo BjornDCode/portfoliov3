@@ -1,0 +1,22 @@
+.text-block {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    @include respond-to(tablet) {
+        p {
+            max-width: 500px;
+        }
+    }
+
+    @include respond-to(desktop){
+        p {
+            max-width: 600px;
+        }
+    }
+
+}

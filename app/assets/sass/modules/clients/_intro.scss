@@ -35,4 +35,11 @@
 
     }
 
+    @include respond-to(tablet) {
+        .client {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
 }

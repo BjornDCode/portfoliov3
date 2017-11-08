@@ -1,5 +1,5 @@
 <template>
-    <section class="clients" id="clients">
+    <section class="clients" id="clients" v-in-viewport.once="-400">
 
         <h2>Clients</h2>
 

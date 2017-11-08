@@ -6,10 +6,8 @@
     justify-content: center;
     align-items: center;
 
-    h2 {
-        // position: absolute;
-        // bottom: 15px;
-        // left: 15px;
+    .swiper-container {
+        @include fade-in-pre(0, 20px, 750ms, 350ms);
     }
 
     .swiper-slide {
@@ -51,18 +49,20 @@
 
     }
 
+    &.in-viewport {
+        .swiper-container {
+            @include fade-in-post();
+        }
+    }
 
     @include respond-to(tablet) {
         flex-direction: column;
 
-        h2 {
-            // position: static;
-            // margin-bottom: 100px;
-            // transform: translateY(-150px); 
-        }
-
         .swiper-container {
             width: 100vw;
+            overflow-y: visible !important;
+            padding: 20px 0;
+            @include fade-in-post();
         }
 
         .swiper-wrapper {
@@ -74,27 +74,58 @@
         .swiper-slide {
             margin: 0 20px;
             width: auto;
+
+            &:nth-child(1) {
+                .client {
+                    transition-delay: 750ms;
+                }
+            }
+
+            &:nth-child(2) {
+                .client {
+                    transition-delay: 850ms;
+                }
+            }
+
+            &:nth-child(3) {
+                .client {
+                    transition-delay: 950ms;
+                }
+            }
+
+            &:nth-child(4) {
+                .client {
+                    transition-delay: 1050ms;
+                }
+            }
         }
 
         .client {
-            width: 180px;
-            height: 180px;
+            width: 15vw;
+            height: 15vw;
+
+            @include fade-in-pre(0, 20px, 400ms, 0);
+        }
+
+        &.in-viewport {
+            .client {
+                @include fade-in-post();
+            }
         }
 
     }
 
     @include respond-to(desktop) {
-
-        .swiper-container {
-            overflow-y: visible !important;
-            padding: 10px 0;
-        }
-
         .swiper-slide {
             transition: transform 100ms;
             &:hover {
                 transform: translateY(-10px);
             }
+        }
+
+        .client {
+            width: 180px;
+            height: 180px;
         }
     }
 

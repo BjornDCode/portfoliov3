@@ -38,6 +38,8 @@ h2 {
     bottom: 15px;
     left: 15px;
 
+    @include fade-in-pre(-30px, 0, 500ms, 1000ms);
+
     @include respond-to(mobile) {
         font-size: 24px;
     }
@@ -49,8 +51,18 @@ h2 {
     @include respond-to(desktop) {
         font-size: 35px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -30px);
         top: 100px;
+    }
+
+}
+
+.in-viewport h2 {
+    @include fade-in-post();
+
+    @include respond-to(desktop) {
+        transform: translate(-50%);
+        transition-delay: 1200ms;
     }
 
 }

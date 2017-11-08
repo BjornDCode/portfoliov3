@@ -16,7 +16,7 @@
         overflow: hidden;
 
         h1 {
-            @include fade-in-pre(10px, 500ms, 0);
+            @include fade-in-pre(0, 10px, 500ms, 0);
         }
 
         &:before, &:after {
@@ -68,12 +68,12 @@
     h4 {
         text-align: center;
         margin-bottom: 80px;
-        @include fade-in-pre(10px, 500ms, 4000ms);
+        @include fade-in-pre(0, 10px, 500ms, 4000ms);
     }
 
     .square-link {
         margin: 0 auto;
-        @include fade-in-pre(10px, 500ms, 4500ms);
+        @include fade-in-pre(0, 10px, 500ms, 4500ms);
     }
 
     &.in-viewport {

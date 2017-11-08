@@ -7,14 +7,14 @@
 };
 
 
-@mixin fade-in-pre($translation, $duration, $delay) {
+@mixin fade-in-pre($translationX, $translationY, $duration, $delay) {
     opacity: 0;
-    transform: translateY($translation);
+    transform: translate($translationX, $translationY);
     transition: transform $duration ease-out, opacity $duration ease-out;
     transition-delay: $delay;
 }
 
 @mixin fade-in-post() {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0, 0);
 }

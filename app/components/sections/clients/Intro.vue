@@ -10,13 +10,13 @@
 
 <script>
     export default {
-        props: ['name', 'url'],
+        props: ['name', 'url', 'imageFormat'],
         computed: {
             className() {
                 return "client " + this.name;
             },
             image() {
-                return "images/" + this.name + ".svg";
+                return "images/" + this.name + "." + this.imageFormat;
             },
             altText() {
                 return "Logo for " + this.name;

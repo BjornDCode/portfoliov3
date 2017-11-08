@@ -45,10 +45,10 @@
             },
             className() {
                 if (this.active) {
-                    return "visuals active"
+                    return "visuals in-viewport active"
                 }
 
-                return "visuals";
+                return "visuals in-viewport";
             },
             imageFolder() {
                 return "images/" + this.name + "/";

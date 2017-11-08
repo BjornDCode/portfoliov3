@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato';
+    font-family: 'lato';
 }
 
 .no-scroll {
@@ -8,7 +8,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato';
+    font-family: 'lato';
     color: $black;
 }
 
@@ -148,13 +148,4 @@ img {
         background-color: $black;
         transform: translateX(100%);
     }
-}
-
-.fade-leave-active {
-    transition: transform 1000ms;
-    overflow-x: visible;
-}
-
-.fade-leave-to {
-    transform: translateX(-200%);  
 }

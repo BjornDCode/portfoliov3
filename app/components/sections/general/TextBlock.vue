@@ -1,5 +1,5 @@
 <template>
-    <section class="text-block">
+    <section class="text-block" v-in-viewport.once="-250">
         <h2>{{ title }}</h2>
         <p>{{ text }}</p>
     </section>

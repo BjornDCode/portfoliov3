@@ -1,7 +1,8 @@
 <template>
-    <section class="intro">
+    <section class="intro" v-in-viewport.once>
         <div :class="className">
             <img :src="image" :alt="altText">
+            <div class="border-container"></div>
         </div>
 
         <h4><a :href="url">{{ name }}</a></h4>

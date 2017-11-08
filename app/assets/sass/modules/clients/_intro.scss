@@ -5,15 +5,68 @@
     justify-content: center;
     align-items: center;
 
+    h4 {
+        @include fade-in-pre(0, 10px, 500ms, 4000ms);   
+    }
+
     .client {
         display: flex;
         width: 50vw;
         height: 50vw;
         box-sizing: border-box;
-        border: 5px solid $black;
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+
+        &:before, &:after {
+            transition: transform 1000ms;
+        }
+
+        &:before, &:after, .border-container:before, .border-container:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-width: 5px !important;
+        }
+
+        &:before {
+            border-top: solid $black;
+            transform: translateX(-100%);
+            transition-delay: 1000ms;
+        }
+
+        &:after {
+            border-bottom: solid $black;
+            transform: translateX(100%);
+            transition-delay: 2500ms;
+        }
+
+        .border-container {
+            &:before, &:after {
+                transition: transform 500ms;
+            }
+
+            &:before {
+                border-right: solid $black;
+                transform: translateY(-100%);
+                transition-delay: 2000ms;
+            }
+
+            &:after {
+                border-left: solid $black;
+                transform: translateY(100%);
+                transition-delay: 3500ms;
+            }            
+        }
+
+        img {
+            @include fade-in-pre(0, 10px, 500ms, 250ms);
+        }
 
         &.uniavisen {
             img {
@@ -31,6 +84,32 @@
             img {
                 width: 70%;
             }
+        }
+
+    }
+
+    &.in-viewport {
+
+        h4 {
+            @include fade-in-post();
+        }
+
+        .client {
+
+            img {
+                @include fade-in-post();
+            }
+
+            &:before, &:after {
+                transform: translateX(0);
+            }
+
+            .border-container {
+                &:before, &:after {
+                    transform: translateY(0);
+                }
+            }
+
         }
 
     }

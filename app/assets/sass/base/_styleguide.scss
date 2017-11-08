@@ -137,4 +137,24 @@ img {
     width: 100%;
     overflow-x: hidden;
     position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $black;
+        transform: translateX(100%);
+    }
+}
+
+.fade-leave-active {
+    transition: transform 1000ms;
+    overflow-x: visible;
+}
+
+.fade-leave-to {
+    transform: translateX(-200%);  
 }

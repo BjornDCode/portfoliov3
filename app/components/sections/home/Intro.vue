@@ -6,7 +6,7 @@
                 <h1>Bjørn Lindholm</h1>
             </div>
 
-            <h4>Web Designer / Web Developer</h4>
+            <h4>Web Developer</h4>
 
             <a href="#" class="square-link" v-scroll-to="{
                 el: '#clients',

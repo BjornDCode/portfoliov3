@@ -1,5 +1,5 @@
 <template>
-    <section class="about">
+    <section class="about" v-in-viewport.once="-270">
         <h2>About</h2>
 
         <ul>

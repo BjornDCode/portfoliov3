@@ -3,6 +3,7 @@
         <intro />
         <clients />
         <about />
+        <div id="contact-hook"></div>
     </main>
 </template>
 

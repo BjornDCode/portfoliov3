@@ -44,6 +44,11 @@
             }
         }
 
+        &.contact-link {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
     }
 
 
@@ -78,4 +83,24 @@
 
     }
 
+    @include respond-to(desktop) {
+
+        .swiper-container {
+            overflow-y: visible !important;
+            padding: 10px 0;
+        }
+
+        .swiper-slide {
+            transition: transform 100ms;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+}
+
+#contact-hook {
+    position: absolute;
+    bottom: 0;
 }

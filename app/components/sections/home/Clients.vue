@@ -20,9 +20,12 @@
                 </router-link>
             </swiper-slide>
             <swiper-slide>
-                <a href="#contact" class="client eraova">
-                    You?
-                </a>
+                <a href="#" class="client contact-link" v-scroll-to="{
+                    el: '#contact-hook',
+                    container: 'body',
+                    duration: 1000,
+                    easing: 'ease-out'
+                }">You?</a>
             </swiper-slide>
         </swiper>
 

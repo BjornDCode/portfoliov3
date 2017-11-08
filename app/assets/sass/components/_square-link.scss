@@ -13,7 +13,7 @@
         }
     }
 
-    img {
+    img, svg {
         width: 40%;
     }
 
@@ -26,7 +26,7 @@
         width: 50px;
         height: 50px;
         
-        img {
+        img, svg {
             width: 35%;
         }   
     }
@@ -34,6 +34,51 @@
     @include respond-to(desktop) {
         width: 60px;
         height: 60px;
+        position: relative;
+        z-index: 1;
+
+
+        path {
+            fill: $black;
+        }
+
+        .twitter {
+            fill: none;
+            stroke: $black;
+            stroke-width: 2px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background-color: $black;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 150ms ease-out;
+        }
+
+        &:hover {
+            color: $white;
+
+            path {
+                fill: $white;
+            }
+
+            .twitter {
+                fill: none;
+                stroke: $white;
+            }
+
+            &:before {
+                transform: scaleY(1);
+            }
+        }
+
     }
 
 }

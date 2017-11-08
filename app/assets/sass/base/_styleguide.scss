@@ -48,6 +48,9 @@ h2 {
 
     @include respond-to(desktop) {
         font-size: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
     }
 
 }

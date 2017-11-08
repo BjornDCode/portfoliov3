@@ -4,9 +4,12 @@ import routes from './routes';
 
 import VueRouter from 'vue-router';
 import VueScrollTo from 'vue-scrollto';
+import inViewportDirective from 'vue-in-viewport-directive'
+
 
 Vue.use(VueRouter);
 Vue.use(VueScrollTo);
+Vue.directive('in-viewport', inViewportDirective)
 
 const router = new VueRouter({
     routes,

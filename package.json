@@ -19,6 +19,7 @@
   "dependencies": {
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
+    "vue-in-viewport-directive": "^1.1.4",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.7.9"
   }

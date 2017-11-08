@@ -1,9 +1,10 @@
 <template>
-    <section class="intro">
+    <section class="intro" v-in-viewport.once>
         
         <div class="container">
             <div class="title">
                 <h1>Bjørn Lindholm</h1>
+                <div class="border-container"></div>
             </div>
 
             <h4>Web Developer</h4>

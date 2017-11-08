@@ -1,5 +1,5 @@
 <template>
-    <section :class="className">
+    <section :class="className" v-in-viewport.once>
         <div class="close" @click="destroySwiper">
             <img src="images/close.svg" alt="Close slideshow">
         </div>

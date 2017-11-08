@@ -11,6 +11,10 @@
         display: none;
     }
 
+    .swiper-container {
+        @include fade-in-pre(0, 0, 500ms, 500ms);
+    }
+
     .swiper-wrapper {
         display: flex;
         align-items: center;
@@ -37,6 +41,12 @@
         .close {
             display: block;
         }        
+    }
+
+    &.in-viewport {
+        .swiper-container {
+            @include fade-in-post();
+        }
     }
 
     @include respond-to(tablet) {

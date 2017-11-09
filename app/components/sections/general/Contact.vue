@@ -4,7 +4,7 @@
             <a href="mailto:bjornlindholmhansen@gmail.com">bjornlindholmhansen@gmail.com</a>
         </div>
         <div class="links">
-            <a href="https://twitter.com/LindholmHansen" class="square-link">
+            <a href="https://twitter.com/LindholmHansen" target="_blank" class="square-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="8425.46 5450.219 31.307 25.544">
                     <g id="twitter-logo-silhouette" transform="translate(8425.999 5394.559)">
                         <g id="Group_1" data-name="Group 1" transform="translate(0.001 57.441)">
@@ -13,8 +13,8 @@
                     </g>
                 </svg>
             </a>
-            <a href="#" class="square-link">CV</a>
-            <a href="https://www.instagram.com/bjornhansendk/" class="square-link">
+            <a href="#" target="_blank" class="square-link">CV</a>
+            <a href="https://www.instagram.com/bjornhansendk/" target="_blank" class="square-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="8573 5451 24.5 24.5">
                     <g id="instagram-logo" transform="translate(8573 5451)">
                         <path id="Path_12" class="instagram" data-name="Path 12" d="M17.739,0H6.761A6.769,6.769,0,0,0,0,6.761V17.739A6.769,6.769,0,0,0,6.761,24.5H17.739A6.769,6.769,0,0,0,24.5,17.739V6.761A6.769,6.769,0,0,0,17.739,0Zm4.588,17.739a4.593,4.593,0,0,1-4.588,4.587H6.761a4.592,4.592,0,0,1-4.587-4.587V6.761A4.593,4.593,0,0,1,6.761,2.174H17.739a4.593,4.593,0,0,1,4.587,4.587V17.739Z"/>

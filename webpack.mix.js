@@ -15,7 +15,6 @@ const LiveReloadPlugin = require('webpack-livereload-plugin');
 mix.js('app/app.js', 'public/')
    .sass('app/assets/sass/app.scss', 'public/')
    .copy('app/index.html', 'public/')
-   .copy('app/assets/other/cv.pdf', 'public/')
    .copy('app/assets/other/favicon-16x16.png', 'public/')
    .copy('app/assets/other/favicon-32x32.png', 'public/')
    .copyDirectory('app/assets/images/', 'public/images/')

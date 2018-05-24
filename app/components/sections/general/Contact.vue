@@ -13,7 +13,6 @@
                     </g>
                 </svg>
             </a>
-            <a href="cv.pdf" target="_blank" class="square-link">CV</a>
             <a href="https://www.instagram.com/bjornhansendk/" target="_blank" class="square-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="8573 5451 24.5 24.5">
                     <g id="instagram-logo" transform="translate(8573 5451)">
